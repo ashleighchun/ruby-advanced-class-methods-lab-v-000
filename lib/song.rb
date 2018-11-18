@@ -67,7 +67,7 @@ class Song
     song.artist_name = artist 
     @@artists << artist 
     @@songs << song_name
-    
+    binding.pry
     
   end 
 end
