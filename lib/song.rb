@@ -59,14 +59,8 @@ class Song
   
   
   def self.create_from_filename(file_name)
-    file_array = file_name.split(" - ")
-    song_name = file_array[1].chomp(".mp3") 
-    artist = file_array[0]
-    song = self.new
-    song.name = song_name
-    song.artist_name = artist 
-    @@artists << artist 
-    @@songs << song_name
+    self.new_from_filename(filename)
+    
     #binding.pry
     
   end 
